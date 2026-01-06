@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Optizi Headless E-Commerce | Case Study</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Outfit:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .case-hero {
+            padding: 12rem 0 6rem;
+            background: linear-gradient(to bottom, #d97706, #78350f, #0f172a); /* Amber/Orange for retail vibe */
+            border-bottom: 1px solid var(--border-subtle);
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <div class="container nav">
+            <a href="index.html" class="logo"><span class="logo-dot"></span>Khaled Morsi</a>
+            <nav>
+                <ul class="nav-links">
+                     <li><a href="index.html#work" class="nav-link">Back to Work</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="case-hero">
+            <div class="container">
+                <span class="hero-label" style="background: rgba(0,0,0,0.2); border-color: rgba(255,255,255,0.2); color:white;">Headless E-Commerce API</span>
+                <h1 class="hero-title">Optizi & Yama: Reimagining Woo for Mobile.</h1>
+                <p class="hero-description" style="color: rgba(255,255,255,0.9);">
+                    Transforming standard WooCommerce installations into high-performance, API-driven backends for custom mobile applications.
+                </p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                 <div class="project-grid">
+                     <div>
+                         <h3 class="section-title">The "Headless" Transformation</h3>
+                         <p class="project-desc">
+                             Standard WooCommerce wasn't enough for the client's mobile app requirements. I engineered a robust **Custom REST API Layer** on top of the CMS to expose advanced logic to the frontend.
+                         </p>
+                         <h4 style="margin-top: 2rem; margin-bottom: 1rem; color: var(--accent-primary);">Key Engineering Feats:</h4>
+                         <ul style="list-style: none; display: flex; flex-direction: column; gap: 1rem;">
+                             <li style="display: flex; gap: 1rem;">
+                                 <i class="ri-search-eye-line" style="color: var(--accent-primary);"></i>
+                                 <div>
+                                     <strong>Custom Logic Endpoints</strong>
+                                     <p class="text-xs text-muted">Stock reduction, Coupon application, and complex Cart management—rebuilt as JSON APIs for the mobile app.</p>
+                                 </div>
+                             </li>
+                             <li style="display: flex; gap: 1rem;">
+                                 <i class="ri-user-heart-line" style="color: var(--accent-primary);"></i>
+                                 <div>
+                                     <strong>Beyond Commerce</strong>
+                                     <p class="text-xs text-muted">Integrated unique user-centric features like "Mood Tracking" and "Prayers Tracking" directly into the user profile API.</p>
+                                 </div>
+                             </li>
+                             <li style="display: flex; gap: 1rem;">
+                                 <i class="ri-shopping-bag-3-line" style="color: var(--accent-primary);"></i>
+                                 <div>
+                                     <strong>Yama Pastry Deployment</strong>
+                                     <p class="text-xs text-muted">Applied similar high-performance architecture to <a href="https://yamapastry.com" style="text-decoration: underline; color: white;">yamapastry.com</a>, ensuring robust order handling for food retail.</p>
+                                 </div>
+                             </li>
+                         </ul>
+                     </div>
+                     <div class="code-snippet" style="background: #0f172a; padding: 2rem; border-radius: 1rem;">
+<pre style="color: #94a3b8; font-family: monospace; font-size: 0.85rem;">
+// Custom Endpoint: Cart Management
+GET /wp-json/optizi/v1/cart
+{
+  "user_id": 402,
+  "items": [...],
+  "totals": {
+     "subtotal": 1250,
+     "shipping": 50,
+     "coupon_active": true
+  },
+  "mood_metrics": { /* Custom Data */ }
+}
+</pre>
+                     </div>
+                 </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container"><p>&copy; 2026 Khaled Morsi.</p></div>
+    </footer>
+</body>
+</html>

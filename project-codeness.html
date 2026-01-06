@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codeness Lab | Case Study</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Outfit:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .case-hero {
+            padding: 12rem 0 6rem;
+            background: linear-gradient(to bottom, #020617, #0f172a);
+            border-bottom: 1px solid var(--border-subtle);
+        }
+        .content-block {
+            padding: 6rem 0;
+        }
+        .visual-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        .visual-item {
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            border: 1px solid var(--border-subtle);
+        }
+        img { width: 100%; height: auto; }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <div class="container nav">
+            <a href="index.html" class="logo"><span class="logo-dot"></span>Khaled Morsi</a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html#work" class="nav-link">Back to Work</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="case-hero">
+            <div class="container">
+                <span class="hero-label">Brand & Operations Ecosystem</span>
+                <h1 class="hero-title">Codeness Lab: Defining a Digital Identity.</h1>
+            </div>
+        </section>
+
+        <section class="content-block">
+            <div class="container">
+                <div class="visual-grid">
+                    <!-- Placeholder: Homepage V2 Screenshot -->
+                    <div class="visual-item">
+                        <img src="assets/images/codenesslab_home.png" alt="Codeness Lab Home" onerror="this.src='https://placehold.co/600x400/0f172a/FFF?text=Homepage+Design'">
+                    </div>
+                     <!-- Placeholder: Scrolled Screenshot -->
+                     <div class="visual-item">
+                        <img src="assets/images/codenesslab_scrolled.png" alt="Codeness Lab Services" onerror="this.src='https://placehold.co/600x400/0f172a/FFF?text=Services+Grid'">
+                    </div>
+                </div>
+                
+                <div style="margin-top: 4rem; max-width: 800px;">
+                    <h2 class="section-title">The Strategy</h2>
+                    <p class="project-desc">
+                        For a software house, the website isn't just a flyer—it's the first product demo. I designed Codeness Lab to be immersive, using a strict dark-mode palette and "Electric" accent lighting to convey raw computing power.
+                    </p>
+                    <p class="project-desc">
+                        Beyond the pixels, I integrated the frontend directly with <strong>Krayin CRM</strong>, ensuring that every "Estimate Project" click automatically feeds into our sales pipeline, demonstrating my abiity to link design with business ops.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container"><p>&copy; 2026 Khaled Morsi.</p></div>
+    </footer>
+
+</body>
+</html>

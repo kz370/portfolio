@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Chatbot Dashboard | Case Study</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Outfit:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .case-hero {
+            padding: 12rem 0 6rem;
+            background: linear-gradient(to bottom, #10b981, #064e3b, #0f172a);
+            border-bottom: 1px solid var(--border-subtle);
+        }
+        .hero-title {
+            text-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <div class="container nav">
+            <a href="index.html" class="logo"><span class="logo-dot"></span>Khaled Morsi</a>
+            <nav>
+                <ul class="nav-links">
+                     <li><a href="index.html#work" class="nav-link">Back to Work</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="case-hero">
+            <div class="container">
+                <span class="hero-label" style="background: rgba(0,0,0,0.2); border-color: rgba(255,255,255,0.2); color:white;">B2B SaaS Product</span>
+                <h1 class="hero-title">Democratizing AI: A No-Code Chatbot Builder.</h1>
+                <p class="hero-description" style="color: rgba(255,255,255,0.9);">
+                    Allowing businesses to train, customize, and deploy AI agents purely through a visual interface.
+                </p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                 <div class="project-grid">
+                     <div>
+                         <h3 class="section-title">The "Magic" Behind the Scenes</h3>
+                         <p class="project-desc">
+                             Complexity in AI products often lies in the orchestration. I built a system where users simply paste a URL, and my background Python scrapers automatically fetch, parse, and vector-embed the content to train the LLM.
+                         </p>
+                         <p class="project-desc">
+                             <strong>Key Challenges:</strong>
+                         </p>
+                         <ul style="margin-left: 1rem; color: var(--text-secondary); margin-bottom: 2rem;">
+                             <li>Handling scraper barriers and timeouts (Python/Selenium).</li>
+                             <li>Real-time widget communication handling WebSocket connections.</li>
+                             <li>Multi-tenant widget embedding security (CORS & Tokens).</li>
+                         </ul>
+                     </div>
+                     <div style="background: #111; padding: 2rem; border-radius: 1rem;">
+                         <img src="assets/images/chatbots_login.png" alt="Dashboard Login" onerror="this.src='https://placehold.co/600x400/10b981/FFF?text=Dashboard+Interface'">
+                     </div>
+                 </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container"><p>&copy; 2026 Khaled Morsi.</p></div>
+    </footer>
+</body>
+</html>

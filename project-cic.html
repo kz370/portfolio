@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyCIC Ecosystem | Case Study</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Outfit:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Case Study Specific Styles */
+        .case-hero {
+            padding: 12rem 0 6rem;
+            background: linear-gradient(to bottom, #0f172a, #1e293b);
+            border-bottom: 1px solid var(--border-subtle);
+        }
+        
+        .stat-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-top: 4rem;
+            padding: 2rem;
+            background: rgba(255,255,255,0.03);
+            border-radius: var(--radius-lg);
+            border: 1px solid var(--border-subtle);
+        }
+        
+        .stat-item h4 {
+            font-size: 3rem;
+            color: var(--accent-primary);
+            margin-bottom: 0.5rem;
+        }
+        
+        .content-block {
+            padding: 6rem 0;
+            border-bottom: 1px solid var(--border-subtle);
+        }
+        
+        .two-col {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+        
+        @media (max-width: 768px) {
+            .two-col { grid-template-columns: 1fr; }
+        }
+        
+        .diagram-placeholder {
+            width: 100%;
+            height: 400px;
+            background: #1e293b;
+            border: 1px dashed var(--border-subtle);
+            border-radius: var(--radius-md);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-muted);
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .code-snippet {
+            background: #020617;
+            padding: 1.5rem;
+            border-radius: var(--radius-md);
+            border: 1px solid var(--border-subtle);
+            font-family: 'Fira Code', monospace;
+            font-size: 0.85rem;
+            color: #a5b4fc;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header (Same as Index) -->
+    <header class="header">
+        <div class="container nav">
+            <a href="index.html" class="logo">
+                <span class="logo-dot"></span>
+                Khaled Morsi
+            </a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html#work" class="nav-link">Back to Work</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero -->
+        <section class="case-hero">
+            <div class="container">
+                <span class="hero-label">Flagship Backend Architecture</span>
+                <h1 class="hero-title">MyCIC: The Digital Nervous System of a Modern University.</h1>
+                <p class="hero-description">
+                    Architecting a centralized, multi-tenant academic platform handling payments, logistics, and grading for thousands of students and users.
+                </p>
+
+                <div class="stat-grid">
+                    <div class="stat-item">
+                        <h4>5k+</h4>
+                        <p>Active Students</p>
+                    </div>
+                    <div class="stat-item">
+                        <h4>Multi</h4>
+                        <p>Platform Support (Web/App)</p>
+                    </div>
+                    <div class="stat-item">
+                        <h4>99.9%</h4>
+                        <p>Uptime Reliability</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- The Problem -->
+        <section class="content-block">
+            <div class="container two-col">
+                <div>
+                    <span class="section-eyebrow">The Challenge</span>
+                    <h2 class="section-title">Fragmented Data, Operational Chaos.</h2>
+                    <p class="project-desc">
+                        Prior to this system, the university operated on disjointed islands of data: WordPress for the front, legacy SQL for grades, and external providers for payments.
+                    </p>
+                    <p class="project-desc">
+                        <strong>My Role:</strong> I was brought in as the Lead Backend Architect to build a "Single Source of Truth"—a unified API ecosystem that could serve mobile apps, web dashboards, and administrative logistical tools simultaneously.
+                    </p>
+                </div>
+                <div>
+                     <!-- Visual: Chaos vs Order Diagram Placeholder -->
+                     <div class="diagram-placeholder">
+                        <i class="ri-node-tree" style="font-size: 3rem;"></i>
+                        <span>System Architecture Diagram</span>
+                     </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- The Solution / Architecture -->
+        <section class="content-block" style="background: rgba(255,255,255,0.02);">
+            <div class="container">
+                <span class="section-eyebrow">Technical Architecture</span>
+                <h2 class="section-title" style="margin-bottom: 3rem;">Engineered for Scale & Security.</h2>
+                
+                <div class="two-col">
+                    <div>
+                        <h3 style="margin-bottom: 1rem;">Core Features Implemented</h3>
+                        <ul style="list-style: none; display: flex; flex-direction: column; gap: 1rem;">
+                            <li style="display: flex; gap: 1rem;">
+                                <i class="ri-checkbox-circle-fill" style="color: var(--accent-primary);"></i>
+                                <div>
+                                    <strong>Unified API Gateway</strong>
+                                    <p class="text-xs text-muted">A solid Laravel REST API serving both the Flutter Mobile App and Vue.js Web Dashboards, ensuring data consistency.</p>
+                                </div>
+                            </li>
+                            <li style="display: flex; gap: 1rem;">
+                                <i class="ri-checkbox-circle-fill" style="color: var(--accent-primary);"></i>
+                                <div>
+                                    <strong>Logistical Intelligence</strong>
+                                    <p class="text-xs text-muted">Automated shipping workflows. Students request documents &rarr; System calculates fees &rarr; API dispatches to Courier.</p>
+                                </div>
+                            </li>
+                            <li style="display: flex; gap: 1rem;">
+                                <i class="ri-checkbox-circle-fill" style="color: var(--accent-primary);"></i>
+                                <div>
+                                    <strong>Secure Payments</strong>
+                                    <p class="text-xs text-muted">Deep integration with Klickit for tuition processing, handling webhooks and instant transaction verification.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="code-snippet">
+<pre>
+// Middleware: RoleBasedAccess.php
+public function handle($request, Closure $next, ...$guards)
+{
+    // Secure unified entry point for Students, Parents, and Staff
+    if (Auth::guard($guard)-&gt;check() && $request-&gt;user()-&gt;can('access-api')) {
+        return $next($request);
+    }
+
+    return response()-&gt;json(['message' =&gt; 'Unauthorized Access'], 403);
+}
+</pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Outcome -->
+        <section class="content-block">
+            <div class="container center" style="text-align: center; max-width: 800px;">
+                <span class="section-eyebrow">The Outcome</span>
+                <h2 class="section-title">A Digital Campus.</h2>
+                <p class="project-desc">
+                    MyCIC is now the heartbeat of the university's daily operations. Students check grades, pay fees, and track buses in real-time. The administration has cut processing time by 40% through the automated dashboards I delivered.
+                </p>
+                <div class="btn-group" style="justify-content: center; margin-top: 2rem;">
+                    <a href="https://cic-cairo.edu.eg" target="_blank" class="btn btn-primary">Visit Logic Layer (Web)</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Khaled Morsi.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
