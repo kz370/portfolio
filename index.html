@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Khaled Morsi | Senior Full-Stack Engineer & Digital Architect</title>
-    <meta name="description" content="Portfolio of Khaled Morsi, a Senior Full-Stack Engineer specializing in complex digital ecosystems, backend architecture, and high-performance web applications.">
-    
+    <title>Khaled Morsi | PHP Backend Developer</title>
+    <meta name="description" content="Portfolio of Khaled Morsi, a PHP Backend Developer specializing in Laravel, API development, and high-performance web applications.">
+    <!-- Favicon -->
+    <link rel="icon" type="image/webp" href="assets/images/favicon.webp">
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;700;800&display=swap" rel="stylesheet">
-    
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css">
-
     <!-- Styles -->
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -29,6 +29,7 @@
             <nav>
                 <ul class="nav-links">
                     <li><a href="#work" class="nav-link">Work</a></li>
+                    <li><a href="#packages" class="nav-link">Open Source</a></li>
                     <li><a href="#about" class="nav-link">About</a></li>
                     <li><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
@@ -49,11 +50,11 @@
                     <span class="text-gradient">scalable ecosystems.</span>
                 </h1>
                 <p class="hero-description">
-                    I am a Senior Full-Stack Engineer helping universities and enterprises streamline operations through secure, high-performance web architecture.
+                    I am a PHP Backend Developer helping businesses build secure, high-performance APIs and web applications with Laravel.
                 </p>
                 <div class="btn-group">
-                    <a href="#work" class="btn btn-primary">View Case Studies</a>
-                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                    <a href="#work" class="btn btn-primary">View Ecosystems</a>
+                    <a href="#packages" class="btn btn-secondary">Open Source</a>
                 </div>
             </div>
         </section>
@@ -63,156 +64,279 @@
             <div class="container">
                 <div class="section-header">
                     <span class="section-eyebrow">Selected Work</span>
-                    <h2 class="section-title">Case studies in scale &amp; complexity.</h2>
+                    <h2 class="section-title">Major Ecosystems & Applications.</h2>
                 </div>
 
                 <div class="project-grid">
                     
                     <!-- Project 1: MyCIC -->
+                    <!-- Project 1: CIC Website -->
                     <article class="project-card">
                         <div class="project-visual">
-                             <div style="background: linear-gradient(to bottom right, #1e293b, #0f172a); width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;">
-                                <i class="ri-server-line" style="font-size: 4rem; color: var(--accent-secondary);"></i>
-                             </div>
+                             <img src="assets/images/cic_home.webp" loading="lazy" alt="CIC University Website" onerror="this.src='https://placehold.co/600x400/1e293b/FFF?text=CIC+Website'">
+                        </div>
+                        <div class="project-info">
+                            <span class="project-role">Lead Developer</span>
+                            <h3 class="project-title">CIC University Website</h3>
+                            <p class="project-desc">
+                                The official public portal for the university. Built on WordPress, I optimized it for high traffic, ensuring 99.9% uptime during enrollment seasons and managing all content workflows.
+                            </p>
+                            <div class="tech-stack">
+                                <span class="tech-tag">WordPress</span>
+                                <span class="tech-tag">Performance</span>
+                                <span class="tech-tag">MySQL</span>
+                            </div>
+                            <div class="project-actions" style="display: flex; gap: 1rem; margin-top: auto;">
+                                <a href="project-cic.html" class="project-link">
+                                    View Case Study <i class="ri-arrow-right-line"></i>
+                                </a>
+                                <a href="https://cic-cairo.edu.eg" target="_blank" class="project-link" style="color: var(--text-secondary); font-weight: 400;">
+                                    Live Site <i class="ri-external-link-line"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 1.5: MyCIC App -->
+                    <article class="project-card">
+                        <div class="project-visual">
+                             <img src="assets/images/cic_app.webp" loading="lazy" alt="MyCIC Mobile App Backend" onerror="this.src='https://placehold.co/600x400/1e293b/FFF?text=MyCIC+App+Backend'">
                         </div>
                         <div class="project-info">
                             <span class="project-role">Lead Backend Architect</span>
-                            <h3 class="project-title">MyCIC University Ecosystem</h3>
+                            <h3 class="project-title">MyCIC Student App</h3>
                             <p class="project-desc">
-                                A massive multi-tenant student information system serving thousands of users. Unified mobile/web APIs, complex shipping logistics, and secure payments in one central brain.
+                                The dedicated mobile ecosystem for <strong>96k+ students</strong>. I architected the <strong>Laravel API</strong> that powers this Flutter app, handling real-time grades, tuition payments, and course schedules.
                             </p>
                             <div class="tech-stack">
-                                <span class="tech-tag">Laravel</span>
-                                <span class="tech-tag">API Design</span>
+                                <span class="tech-tag">Laravel API</span>
                                 <span class="tech-tag">Redis</span>
-                                <span class="tech-tag">Flutter Integ.</span>
+                                <span class="tech-tag">Payment Gateways</span>
                             </div>
-                            <a href="project-cic.html" class="project-link">
-                                View Case Study <i class="ri-arrow-right-line"></i>
-                            </a>
+                            <div class="project-actions" style="display: flex; gap: 1rem; margin-top: auto;">
+                                <a href="project-cic-app.html" class="project-link">
+                                    View Case Study <i class="ri-arrow-right-line"></i>
+                                </a>
+                            </div>
                         </div>
                     </article>
 
-                    <!-- Project 2: Codeness Lab -->
+                    <!-- Project 2: Achievers -->
                     <article class="project-card">
                         <div class="project-visual">
-                             <div style="background: linear-gradient(to bottom right, #0f172a, #020617); width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;">
-                                <i class="ri-code-s-slash-line" style="font-size: 4rem; color: var(--accent-primary);"></i>
-                             </div>
+                             <img src="assets/images/We_Achieve.webp" loading="lazy" alt="We Achieve Platform" onerror="this.src='https://placehold.co/600x400/881337/FFF?text=We+Achieve'">
                         </div>
                         <div class="project-info">
-                            <span class="project-role">Technical Lead & Frontend</span>
-                            <h3 class="project-title">Codeness Lab Brand System</h3>
+                            <span class="project-role">Platform Engineer</span>
+                            <h3 class="project-title">We Achieve Platform</h3>
                             <p class="project-desc">
-                                A premium digital agency experience combining marketing, CRM data capture, and project management tools into a cohesive dark-mode brand identity.
+                                A SaaS-ready performance platform for tracking goals and community challenges. Architecture relies on FilamentPHP for rapid dashboarding and complex pivot-table relationships for badges.
                             </p>
                             <div class="tech-stack">
-                                <span class="tech-tag">Creative Frontend</span>
-                                <span class="tech-tag">CRM Integration</span>
-                                <span class="tech-tag">Brand Strategy</span>
+                                <span class="tech-tag">FilamentPHP</span>
+                                <span class="tech-tag">Social Graph</span>
+                                <span class="tech-tag">Gamification</span>
                             </div>
-                            <a href="project-codeness.html" class="project-link">
-                                View Case Study <i class="ri-arrow-right-line"></i>
-                            </a>
+                            <div class="project-actions" style="display: flex; gap: 1.5rem; margin-top: auto;">
+                                <a href="project-achievers.html" class="project-link">
+                                    View Case Study <i class="ri-arrow-right-line"></i>
+                                </a>
+                            </div>
                         </div>
                     </article>
 
-                    <!-- Project 3: AI Dashboard -->
+                    <!-- Project 3: Optizi & Yama -->
                     <article class="project-card">
                         <div class="project-visual">
-                             <div style="background: linear-gradient(to bottom right, #334155, #1e293b); width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;">
-                                <i class="ri-robot-2-line" style="font-size: 4rem; color: #10b981;"></i>
-                             </div>
-                        </div>
-                        <div class="project-info">
-                            <span class="project-role">Full-Stack Product Lead</span>
-                            <h3 class="project-title">AI Chatbot SaaS Dashboard</h3>
-                            <p class="project-desc">
-                                A self-service platform allowing businesses to train and deploy custom AI agents. Features python-based web scrapers, widget embedding, and LLM orchestration.
-                            </p>
-                            <div class="tech-stack">
-                                <span class="tech-tag">Vue.js</span>
-                                <span class="tech-tag">Python/Scrapers</span>
-                                <span class="tech-tag">SaaS Arch</span>
-                            </div>
-                            <a href="project-chatbot.html" class="project-link">
-                                View Case Study <i class="ri-arrow-right-line"></i>
-                            </a>
-                        </div>
-                    </article>
-                    
-                    <!-- Project 4: IGS -->
-                    <article class="project-card">
-                        <div class="project-visual">
-                             <div style="background: linear-gradient(to bottom right, #2e1065, #0f172a); width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;">
-                                <i class="ri-building-4-line" style="font-size: 4rem; color: #a78bfa;"></i>
-                             </div>
-                        </div>
-                        <div class="project-info">
-                            <span class="project-role">Lead Maintainer & Optimization</span>
-                            <h3 class="project-title">IGS & Partners Consultancy</h3>
-                            <p class="project-desc">
-                                Managed the global digital presence for a multi-national consultancy. Focused on server-side maintenance, performance optimization, and content localization for Dubai/Cairo.
-                            </p>
-                            <div class="tech-stack">
-                                <span class="tech-tag">Maintenance</span>
-                                <span class="tech-tag">Optimization</span>
-                                <span class="tech-tag">Content Mgt</span>
-                            </div>
-                            <a href="project-igs.html" class="project-link">
-                                View Case Study <i class="ri-arrow-right-line"></i>
-                            </a>
-                        </div>
-                    </article>
-
-                    <!-- Project 5: Optizi / Yama -->
-                    <article class="project-card">
-                        <div class="project-visual">
-                             <div style="background: linear-gradient(to bottom right, #78350f, #0f172a); width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;">
-                                <i class="ri-shopping-cart-2-line" style="font-size: 4rem; color: #fbbf24;"></i>
-                             </div>
+                             <img src="assets/images/optizi_home.webp" loading="lazy" alt="Optizi Headless Theme" onerror="this.src='https://placehold.co/600x400/78350f/FFF?text=Headless+Commerce'">
                         </div>
                         <div class="project-info">
                             <span class="project-role">Lead API Engineer</span>
                             <h3 class="project-title">Optizi & Yama: Headless E-Com</h3>
                             <p class="project-desc">
-                                Transformed standard WooCommerce into a high-performance <strong>Headless API</strong>. Built custom endpoints for a React Native App, including stock sync, mood tracking, and complex cart logic.
+                                A WordPress e-commerce site with custom REST APIs I built to power a <strong>Flutter mobile app</strong>. Includes real-time stock sync, cart logic, and lifestyle tracking features.
                             </p>
                             <div class="tech-stack">
-                                <span class="tech-tag">REST API</span>
+                                <span class="tech-tag">WordPress API</span>
                                 <span class="tech-tag">WooCommerce</span>
-                                <span class="tech-tag">Mobile Backend</span>
+                                <span class="tech-tag">Flutter Backend</span>
                             </div>
-                            <a href="project-optizi.html" class="project-link">
-                                View Case Study <i class="ri-arrow-right-line"></i>
-                            </a>
+                            <div class="project-actions" style="display: flex; gap: 1.5rem; margin-top: auto;">
+                                <a href="project-optizi.html" class="project-link">
+                                    View Case Study <i class="ri-arrow-right-line"></i>
+                                </a>
+                                <a href="https://optizi.codenesslab.com" target="_blank" class="project-link" style="color: var(--text-secondary); font-weight: 400;">
+                                    Live Site <i class="ri-external-link-line"></i>
+                                </a>
+                            </div>
                         </div>
                     </article>
 
-                    <!-- Project 6: LMS -->
+                    <!-- Project 4: Chatbot -->
                     <article class="project-card">
                         <div class="project-visual">
-                             <div style="background: linear-gradient(to bottom right, #c2410c, #0f172a); width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;">
-                                <i class="ri-graduation-cap-fill" style="font-size: 4rem; color: #fdba74;"></i>
-                             </div>
+                             <img src="assets/images/chatbots_login.webp" loading="lazy" alt="Chatbot Dashboard" onerror="this.src='https://placehold.co/600x400/334155/FFF?text=AI+SaaS+Dashboard'">
+                        </div>
+                        <div class="project-info">
+                            <span class="project-role">Full-Stack Developer</span>
+                            <h3 class="project-title">AI Chatbot SaaS Platform</h3>
+                            <p class="project-desc">
+                                A complete <strong>FilamentPHP dashboard</strong> I built from scratch. Manages chatbot users, usage quotas, and includes a custom <strong>WordPress plugin</strong> for easy widget embedding.
+                            </p>
+                            <div class="tech-stack">
+                                <span class="tech-tag">FilamentPHP</span>
+                                <span class="tech-tag">Laravel</span>
+                                <span class="tech-tag">WordPress Plugin</span>
+                            </div>
+                            <div class="project-actions" style="display: flex; gap: 1.5rem; margin-top: auto;">
+                                <a href="project-chatbot.html" class="project-link">
+                                    View Case Study <i class="ri-arrow-right-line"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- Project 5: LMS -->
+                    <article class="project-card">
+                        <div class="project-visual">
+                             <img src="assets/images/moodle.webp" loading="lazy" alt="Moodle LMS Ecosystem" onerror="this.src='https://placehold.co/600x400/c2410c/FFF?text=Moodle+LMS'">
                         </div>
                         <div class="project-info">
                             <span class="project-role">EdTech Integrator</span>
                             <h3 class="project-title">Moodle LMS Ecosystem</h3>
                             <p class="project-desc">
-                                A specialized Learning Management System deployment. Custom integrated <strong>Zoom</strong>, <strong>BigBlueButton</strong>, and social certification sharing (LinkedIn) for a seamless classroom experience.
+                                A specialized Moodle deployment focused on connectivity. Features deep integrations with Zoom and BigBlueButton for live classes, plus one-click certification sharing to LinkedIn.
                             </p>
                             <div class="tech-stack">
                                 <span class="tech-tag">Moodle PHP</span>
                                 <span class="tech-tag">Video Integrations</span>
-                                <span class="tech-tag">Certifications</span>
                             </div>
-                            <a href="project-lms.html" class="project-link">
-                                View Case Study <i class="ri-arrow-right-line"></i>
-                            </a>
+                            <div class="project-actions" style="display: flex; gap: 1.5rem; margin-top: auto;">
+                                <a href="project-lms.html" class="project-link">
+                                    View Case Study <i class="ri-arrow-right-line"></i>
+                                </a>
+                                <a href="https://lms.codenesslab.com" target="_blank" class="project-link" style="color: var(--text-secondary); font-weight: 400;">
+                                    Live Site <i class="ri-external-link-line"></i>
+                                </a>
+                            </div>
                         </div>
                     </article>
 
+                    <!-- Project 6: Codeness CRM -->
+                    <article class="project-card">
+                        <div class="project-visual">
+                             <img src="assets/images/crm_dashboard.webp" loading="lazy" alt="Codeness CRM" onerror="this.src='https://placehold.co/600x400/10b981/FFF?text=Krayin+CRM'">
+                        </div>
+                        <div class="project-info">
+                            <span class="project-role">CRM Architect</span>
+                            <h3 class="project-title">Codeness CRM (Krayin)</h3>
+                            <p class="project-desc">
+                                The agency's central nervous system. A modified Krayin CRM instance featuring a custom Multi-Tenancy package and automated lead-capture pipelines from the public site.
+                            </p>
+                            <div class="tech-stack">
+                                <span class="tech-tag">Krayin CRM</span>
+                                <span class="tech-tag">Laravel</span>
+                                <span class="tech-tag">Multi-Tenancy</span>
+                            </div>
+                            <div class="project-actions" style="display: flex; gap: 1rem; margin-top: auto;">
+                                <a href="project-crm.html" class="project-link">
+                                    View Case Study <i class="ri-arrow-right-line"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 7: Codeness Agency Site -->
+                    <article class="project-card">
+                        <div class="project-visual">
+                             <img src="assets/images/codenesslab_home.webp" loading="lazy" alt="Codeness Lab Home" onerror="this.src='https://placehold.co/600x400/0f172a/FFF?text=Codeness+Agency'">
+                        </div>
+                        <div class="project-info">
+                            <span class="project-role">Technical Lead & Frontend</span>
+                            <h3 class="project-title">Codeness Lab Agency</h3>
+                            <p class="project-desc">
+                                The agency's main portfolio site. I built and maintain this showcase where Codeness Lab demonstrates their projects to attract new clients.
+                            </p>
+                            <div class="tech-stack">
+                                <span class="tech-tag">WordPress</span>
+                                <span class="tech-tag">Portfolio</span>
+                            </div>
+                            <div class="project-actions" style="display: flex; gap: 1.5rem; margin-top: auto;">
+                                <a href="project-codeness.html" class="project-link">
+                                    View Case Study <i class="ri-arrow-right-line"></i>
+                                </a>
+                                <a href="https://codenesslab.com" target="_blank" class="project-link" style="color: var(--text-secondary); font-weight: 400;">
+                                    Live Site <i class="ri-external-link-line"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                     <!-- Project 8: IGS -->
+                    <article class="project-card">
+                        <div class="project-visual">
+                             <img src="assets/images/igs_home.webp" loading="lazy" alt="IGS Corporate Home" onerror="this.src='https://placehold.co/600x400/2e1065/FFF?text=IGS+Corporate'">
+                        </div>
+                        <div class="project-info">
+                            <span class="project-role">Lead Maintainer</span>
+                            <h3 class="project-title">IGS & Partners Consultancy</h3>
+                            <p class="project-desc">
+                                Global corporate platform stability. My role focused on server-side performance tuning, security patching, and implementing localized content strategies for diverse markets.
+                            </p>
+                            <div class="tech-stack">
+                                <span class="tech-tag">Maintenance</span>
+                                <span class="tech-tag">Optimization</span>
+                            </div>
+                            <div class="project-actions" style="display: flex; gap: 1.5rem; margin-top: auto;">
+                                <a href="project-igs.html" class="project-link">
+                                    View Case Study <i class="ri-arrow-right-line"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Open Source / Packages -->
+        <section id="packages" class="section" style="background: rgba(255,255,255,0.02);">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-eyebrow">Open Source</span>
+                    <h2 class="section-title">Architectural Packages.</h2>
+                </div>
+                
+                <div class="project-grid">
+                    <article class="project-card">
+                        <div class="project-visual">
+                             <img src="assets/images/krayin-tenants.webp" loading="lazy" alt="Krayin Multi-Tenancy Repo" onerror="this.src='https://placehold.co/600x400/0f172a/FFF?text=Multi-Tenancy+Code'">
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Krayin Multi-Tenancy</h3>
+                            <p class="project-desc">A sophisticated Laravel package enabling database-per-tenant architecture for Krayin CRM. Handles connection swapping and tenant isolation.</p>
+                             <div class="tech-stack">
+                                <span class="tech-tag">Laravel Package</span>
+                                <span class="tech-tag">Tenant Architecture</span>
+                            </div>
+                            <a href="project-packages.html" class="project-link">View Details</a>
+                        </div>
+                    </article>
+                    
+                    <article class="project-card">
+                        <div class="project-visual">
+                             <img src="assets/images/jwt_auth_github.webp" loading="lazy" alt="JWT Auth Repo" onerror="this.src='https://placehold.co/600x400/0f172a/FFF?text=JWT+Auth+Code'">
+                        </div>
+                        <div class="project-info">
+                             <h3 class="project-title">JWT Auth</h3>
+                            <p class="project-desc">Secure JSON Web Token authentication implementation for stateless API architectures. Focuses on security best practices and modularity.</p>
+                             <div class="tech-stack">
+                                <span class="tech-tag">Security</span>
+                                <span class="tech-tag">Authentication</span>
+                            </div>
+                            <a href="project-packages.html" class="project-link">View Details</a>
+                        </div>
+                    </article>
                 </div>
             </div>
         </section>
@@ -228,23 +352,22 @@
                 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
                     <div>
                         <p class="project-desc">
-                            With over 2 years of creating high-stakes digital infrastructure, I specialize in building systems that work when it matters. Whether it's processing thousands of student payments, managing realtime AI conversations, or building custom E-commerce APIs.
+                            With extensive experience in building high-stakes digital infrastructure, I specialize in building systems that work when it matters. From processing thousands of student payments to architecting multi-tenant packages.
                         </p>
                         <p class="project-desc">
-                            My approach is result-oriented: clean code is important, but a reliable, profitable product is the goal.
+                            My approach is result-oriented: clean code is important, but a reliable, maintained, and profitable product is the goal.
                         </p>
                     </div>
                     <div>
                         <h4 style="margin-bottom: 1rem;">Core Tech Stack</h4>
                         <div class="tech-stack">
                             <span class="tech-tag" style="background: rgba(56, 189, 248, 0.1); color: var(--accent-primary);">PHP / Laravel</span>
-                            <span class="tech-tag">Vue.js / Nuxt</span>
+                            <span class="tech-tag">Vue.js</span>
                             <span class="tech-tag">Tailwind CSS</span>
                             <span class="tech-tag">MySQL & Redis</span>
                             <span class="tech-tag">Linux / DigitalOcean</span>
-                            <span class="tech-tag">RESTful APIs</span>
-                            <span class="tech-tag">Python Automation</span>
-                            <span class="tech-tag">Moodle / Woo</span>
+                            <span class="tech-tag">Multi-Tenancy</span>
+                            <span class="tech-tag">FilamentPHP</span>
                         </div>
                     </div>
                 </div>

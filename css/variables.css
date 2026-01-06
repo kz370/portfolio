@@ -50,8 +50,8 @@
 
   /* Transitions */
   --ease-out: cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  --duration-fast: 200ms;
-  --duration-normal: 400ms;
+  --duration-fast: 150ms;
+  --duration-normal: 250ms;
 }
 
 /* Base Reset & Setup */

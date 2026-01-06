@@ -42,7 +42,9 @@ document.addEventListener('DOMContentLoaded', () => {
     animatedElements.forEach((el, index) => {
         el.style.opacity = "0";
         el.style.transform = "translateY(20px)";
-        el.style.transition = `opacity 0.6s ease-out ${index * 0.1}s, transform 0.6s ease-out ${index * 0.1}s`;
+        // Use modulo to stagger nicely without accumulating massive delays for bottom elements
+        const delay = (index % 5) * 0.1; 
+        el.style.transition = `opacity 0.4s ease-out ${delay}s, transform 0.4s ease-out ${delay}s`;
         fadeUpObserver.observe(el);
     });
 

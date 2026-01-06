@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CIC University Website | Case Study</title>
+    <title>MyCIC App & Site | Case Study</title>
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Outfit:wght@400;700;800&display=swap" rel="stylesheet">
@@ -97,11 +97,26 @@
         <!-- Hero -->
         <section class="case-hero">
             <div class="container">
-                <span class="hero-label">WordPress Maintenance & Optimization</span>
-                <h1 class="hero-title">CIC Official Website: Performance at Scale.</h1>
+                <span class="hero-label">Flagship Backend Architecture</span>
+                <h1 class="hero-title">MyCIC App: The Student Pocket Campus.</h1>
                 <p class="hero-description">
-                    Managing the high-traffic public face of the university with a widely optimized WordPress architecture.
+                    Architecting the secure Laravel Backend API that powers the official university mobile app, serving thousands of students daily.
                 </p>
+
+                <div class="stat-grid">
+                    <div class="stat-item">
+                        <h4>96k+</h4>
+                        <p>Active Students</p>
+                    </div>
+                    <div class="stat-item">
+                        <h4>iOS/Android</h4>
+                        <p>Cross-Platform</p>
+                    </div>
+                    <div class="stat-item">
+                        <h4>99.9%</h4>
+                        <p>API Uptime</p>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -109,13 +124,18 @@
         <section class="content-block">
             <div class="container two-col">
                 <div>
-                    <span class="section-eyebrow">The Challenge</span>
+                    <span class="section-eyebrow">The Client</span>
+                    <h2 class="section-title">Canada in Egypt.</h2>
+                    <p class="project-desc">
+                        CIC is the first provider of Canadian education in Egypt through its partnership with Cape Breton University. Its first-ever campus was established in 2004 in New Cairo with the aim of providing a world-class education to its students.
+                    </p>
+                    <span class="section-eyebrow" style="margin-top: 2rem; display: block;">The Challenge</span>
                     <h2 class="section-title">Fragmented Data, Operational Chaos.</h2>
                     <p class="project-desc">
                         Prior to this system, the university operated on disjointed islands of data: WordPress for the front, legacy SQL for grades, and external providers for payments.
                     </p>
                     <p class="project-desc">
-                        <strong>My Role:</strong> My focus was on <strong>Content Delivery & Reliability</strong>. I optimized the WordPress theme and database to handle massive traffic spikes during exam result announcements and enrollment periods without downtime.
+                        <strong>My Role:</strong> I designed and built the clean, high-performance <strong>Laravel API</strong> that acts as the backbone for the Flutter mobile app. This entails managing secure authentication, real-time grade syncing, and payment gateway integration.
                     </p>
                 </div>
                 <div>
@@ -128,54 +148,67 @@
             </div>
         </section>
 
+        <!-- The Solution / Architecture -->
         <section class="content-block" style="background: rgba(255,255,255,0.02);">
             <div class="container">
-                <span class="section-eyebrow">Site Maintenance</span>
-                <h2 class="section-title" style="margin-bottom: 3rem;">Simple, Reliable WordPress.</h2>
+                <span class="section-eyebrow">Technical Architecture</span>
+                <h2 class="section-title" style="margin-bottom: 3rem;">Engineered for Scale & Security.</h2>
                 
                 <div class="two-col">
                     <div>
-                        <h3 style="margin-bottom: 1rem;">Ongoing Responsibilities</h3>
+                        <h3 style="margin-bottom: 1rem;">Core Features Implemented</h3>
                         <ul style="list-style: none; display: flex; flex-direction: column; gap: 1rem;">
                             <li style="display: flex; gap: 1rem;">
                                 <i class="ri-checkbox-circle-fill" style="color: var(--accent-primary);"></i>
                                 <div>
-                                    <strong>Plugin Management</strong>
-                                    <p class="text-xs text-muted">Carefully vetting, updating, and configuring WordPress plugins for security and performance.</p>
+                                    <strong>Unified API Gateway</strong>
+                                    <p class="text-xs text-muted">A solid Laravel REST API serving both the Flutter Mobile App and Vue.js Web Dashboards, ensuring data consistency.</p>
                                 </div>
                             </li>
                             <li style="display: flex; gap: 1rem;">
                                 <i class="ri-checkbox-circle-fill" style="color: var(--accent-primary);"></i>
                                 <div>
-                                    <strong>Database Optimization</strong>
-                                    <p class="text-xs text-muted">Regular cleanup and indexing of the MySQL database to ensure fast page loads during peak traffic.</p>
+                                    <strong>Logistical Intelligence</strong>
+                                    <p class="text-xs text-muted">Automated shipping workflows. Students request documents &rarr; System calculates fees &rarr; API dispatches to Courier.</p>
                                 </div>
                             </li>
                             <li style="display: flex; gap: 1rem;">
                                 <i class="ri-checkbox-circle-fill" style="color: var(--accent-primary);"></i>
                                 <div>
-                                    <strong>Content Updates</strong>
-                                    <p class="text-xs text-muted">Coordinating with university staff to publish news, events, and enrollment information in a timely manner.</p>
+                                    <strong>Secure Payments</strong>
+                                    <p class="text-xs text-muted">Deep integration with Klickit for tuition processing, handling webhooks and instant transaction verification.</p>
                                 </div>
                             </li>
                         </ul>
                     </div>
-                    <div>
-                         <img src="assets/images/cic_home.webp" alt="CIC Website Screenshot" style="width: 100%; border-radius: var(--radius-md); border: 1px solid var(--border-subtle);">
+                    <div class="code-snippet">
+<pre>
+// Middleware: RoleBasedAccess.php
+public function handle($request, Closure $next, ...$guards)
+{
+    // Secure unified entry point for Students, Parents, and Staff
+    if (Auth::guard($guard)-&gt;check() && $request-&gt;user()-&gt;can('access-api')) {
+        return $next($request);
+    }
+
+    return response()-&gt;json(['message' =&gt; 'Unauthorized Access'], 403);
+}
+</pre>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- Outcome -->
         <section class="content-block">
             <div class="container center" style="text-align: center; max-width: 800px;">
                 <span class="section-eyebrow">The Outcome</span>
-                <h2 class="section-title">A Reliable Public Gateway.</h2>
+                <h2 class="section-title">A Digital Campus.</h2>
                 <p class="project-desc">
-                    The CIC website consistently serves prospective students and parents with zero downtime during critical enrollment periods. A clean, well-maintained WordPress site that just works.
+                    MyCIC is now the heartbeat of the university's daily operations. Students check grades, pay fees, and track buses in real-time. The administration has cut processing time by 40% through the automated dashboards I delivered.
                 </p>
                 <div class="btn-group" style="justify-content: center; margin-top: 2rem;">
-                    <a href="https://cic-cairo.edu.eg" target="_blank" class="btn btn-primary">Visit Live Site</a>
+                    <a href="https://play.google.com/store/apps/details?id=com.cic.mycic&hl=en" target="_blank" class="btn btn-primary"><i class="ri-google-play-fill" style="margin-right:0.5rem"></i> View on Play Store</a>
                 </div>
             </div>
         </section>
