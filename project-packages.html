@@ -61,27 +61,26 @@
                          <div class="two-col" style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 1rem;">
                              <div>
                                  <p class="project-desc">
-                                     A sophisticated package enabling <strong>Database-per-Tenant</strong> architecture for Krayin CRM. 
+                                     A production-ready package that brings <strong>Database-per-Tenant</strong> architecture to Krayin CRM with isolated databases per organization.
                                  </p>
                                  <p class="project-desc">
-                                     <strong>Core Logic:</strong> dynamically swaps the database connection based on the incoming request domain or tenant ID, ensuring total data isolation without code duplication.
+                                     <strong>Current Scope:</strong> automated tenant database creation, landlord/tenant connection handling, tenant-specific migration flows, and subdomain-based tenant access.
                                  </p>
                                  <a href="https://github.com/kz370/krayin-multi-tenancy" target="_blank" class="btn btn-secondary" style="margin-top: 1rem;">View on GitHub</a>
                              </div>
                              <div class="code-preview">
-// TenantMiddleware.php
-public function handle($request, Closure $next)
-{
-    $tenant = Tenant::where('domain', $request->getHost())->first();
-    
-    if ($tenant) {
-        // Hot-swap DB Connection
-        Config::set('database.connections.tenant.database', $tenant->db_name);
-        DB::purge('tenant');
-    }
-    
-    return $next($request);
-}
+// Install + tenant migrations
+composer require kz370/krayin-multi-tenancy
+
+php artisan vendor:publish --tag=krayin-multi-tenancy-config
+php artisan vendor:publish --tag=krayin-multi-tenancy-migrations
+
+// Landlord setup
+php artisan migrate
+php artisan krayin-crm:install
+
+// Keep tenant schemas updated
+php artisan tenants:migrate
                              </div>
                          </div>
                      </div>
@@ -93,24 +92,26 @@ public function handle($request, Closure $next)
                          <div class="two-col" style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 1rem;">
                              <div>
                                  <p class="project-desc">
-                                     A streamlined package for handling <strong>JSON Web Token</strong> authentication in stateless APIs.
+                                     A full-featured Laravel package for <strong>JWT authentication</strong> using access + refresh tokens and secure token lifecycle controls.
                                  </p>
                                  <p class="project-desc">
-                                     Focused on security best practices, handling token rotation, expiration, and payload decoding efficiently for high-traffic microservices.
+                                     Includes refresh-token hashing, rotation, replay detection, multi-guard support, and per-device session management for modern API backends.
                                  </p>
                                  <a href="https://github.com/kz370/jwt-auth" target="_blank" class="btn btn-secondary" style="margin-top: 1rem;">View on GitHub</a>
                              </div>
                              <div class="code-preview">
 // AuthController.php
-public function login(Request $request) 
+public function login(Request $request)
 {
-    $credentials = $request->only('email', 'password');
-    
-    if (!$token = JWTAuth::attempt($credentials)) {
-        return response()->json(['error' => 'Unauthorized'], 401);
+    $credentials = $request-&gt;only('email', 'password');
+
+    $tokens = JwtAuth::attempt($credentials, 'MacBook Pro');
+
+    if (!$tokens) {
+        return response()-&gt;json(['error' =&gt; 'Unauthorized'], 401);
     }
-    
-    return $this->respondWithToken($token);
+
+    return response()-&gt;json($tokens);
 }
                              </div>
                          </div>

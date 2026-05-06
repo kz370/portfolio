@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krayin Multi-Tenancy | Case Study</title>
+    <meta name="description" content="Case study for Krayin Multi-Tenancy, a package enabling database-per-tenant architecture for Krayin CRM.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Outfit:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .case-hero {
+            padding: 12rem 0 6rem;
+            background: linear-gradient(to bottom, #1d4ed8, #1e3a8a, #0f172a);
+            border-bottom: 1px solid var(--border-subtle);
+        }
+
+        .code-preview {
+            background: #0f172a;
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            border: 1px solid var(--border-subtle);
+            font-family: monospace;
+            font-size: 0.9rem;
+            color: #e2e8f0;
+            overflow-x: auto;
+            margin-top: 1.5rem;
+        }
+
+        .flow-steps {
+            list-style: none;
+            padding: 0;
+            margin: 1.5rem 0 0;
+            display: grid;
+            gap: 0.75rem;
+        }
+
+        .flow-steps li {
+            display: flex;
+            gap: 0.75rem;
+            align-items: flex-start;
+            color: var(--text-secondary);
+        }
+
+        .flow-steps i {
+            color: #60a5fa;
+            margin-top: 0.15rem;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container nav">
+            <a href="index.html" class="logo"><span class="logo-dot"></span>Khaled Morsi</a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html#packages" class="nav-link">Back to Open Source</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="case-hero">
+            <div class="container">
+                <span class="hero-label" style="background: rgba(0,0,0,0.2); border-color: rgba(255,255,255,0.2); color:white;">Laravel Package Engineering</span>
+                <h1 class="hero-title">Krayin Multi-Tenancy.</h1>
+                <p class="hero-description" style="color: rgba(255,255,255,0.9);">
+                    A multi-tenancy extension for Krayin CRM that isolates organizations using a true database-per-tenant architecture.
+                </p>
+                <div class="btn-group">
+                    <a href="https://github.com/kz370/krayin-multi-tenancy" target="_blank" class="btn btn-primary">View on GitHub</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="project-grid">
+                    <div>
+                        <span class="section-eyebrow">What It Solves</span>
+                        <h2 class="section-title">Tenant Isolation for CRM at Scale.</h2>
+                        <p class="project-desc">
+                            The package enables multiple organizations to run on one Krayin instance with isolated databases, reducing data leakage risk and simplifying tenant lifecycle management.
+                        </p>
+                        <p class="project-desc">
+                            It supports landlord/tenant separation, tenant DB provisioning, migration tooling, and domain/subdomain routing patterns suitable for real SaaS deployments.
+                        </p>
+                        <ul class="flow-steps">
+                            <li><i class="ri-checkbox-circle-fill"></i><span>Publish package config and migrations.</span></li>
+                            <li><i class="ri-checkbox-circle-fill"></i><span>Create tenant records from the landlord panel.</span></li>
+                            <li><i class="ri-checkbox-circle-fill"></i><span>Provision isolated tenant databases automatically.</span></li>
+                            <li><i class="ri-checkbox-circle-fill"></i><span>Run tenant migrations with dedicated artisan commands.</span></li>
+                        </ul>
+                        <div class="code-preview">
+composer require kz370/krayin-multi-tenancy
+
+php artisan vendor:publish --tag=krayin-multi-tenancy-config
+php artisan vendor:publish --tag=krayin-multi-tenancy-migrations
+
+php artisan migrate
+php artisan krayin-crm:install
+php artisan tenants:migrate
+                        </div>
+                    </div>
+                    <div style="background: #111827; padding: 2rem; border-radius: 1rem; border: 1px solid var(--border-subtle);">
+                        <img src="assets/images/krayin-tenants.webp" alt="Krayin Multi-Tenancy dashboard" style="width: 100%; border-radius: 0.5rem; border: 1px solid var(--border-subtle);">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" style="text-align: center;">
+            <div class="container" style="max-width: 820px;">
+                <span class="section-eyebrow">Repository</span>
+                <h2 class="section-title">Built for Practical Multi-Tenant Operations.</h2>
+                <p class="project-desc">
+                    Krayin Multi-Tenancy focuses on operational reliability by keeping tenant data isolated while preserving a clean workflow for onboarding and migrations.
+                </p>
+                <div class="btn-group" style="justify-content: center; margin-top: 2rem;">
+                    <a href="https://github.com/kz370/krayin-multi-tenancy" target="_blank" class="btn btn-primary">Open GitHub Repository</a>
+                    <a href="index.html#packages" class="btn btn-secondary">Back to Portfolio</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container"><p>&copy; 2026 Khaled Morsi.</p></div>
+    </footer>
+</body>
+</html>
