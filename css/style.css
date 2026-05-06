@@ -160,7 +160,7 @@
   background: radial-gradient(circle, rgba(129, 140, 248, 0.1) 0%, rgba(15, 23, 42, 0) 70%);
 }
 
-/* Work / Projects Section */
+/* Section Headings */
 .section-header {
   margin-bottom: var(--spacing-lg);
 }
@@ -180,25 +180,24 @@
   max-width: 600px;
 }
 
-/* GRID LAYOUT FIX - 2 Columns Per Row */
+/* Project Grid */
 .project-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* Force exactly 2 columns */
-  gap: 2rem; /* Consistent gap */
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
 }
 
 @media (max-width: 768px) {
   .project-grid {
-    grid-template-columns: 1fr; /* Stack on mobile */
+    grid-template-columns: 1fr;
   }
 }
 
-/* Project Card Redesign for Vertical Grid */
 .project-card {
   display: flex;
-  flex-direction: column; /* Stack vertically */
+  flex-direction: column;
   gap: var(--spacing-sm);
-  border: 1px solid var(--border-subtle); /* subtle border for definition */
+  border: 1px solid var(--border-subtle);
   background: var(--bg-surface);
   border-radius: var(--radius-lg);
   overflow: hidden;
@@ -207,13 +206,13 @@
 
 .project-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 20px 40px -5px rgba(0,0,0,0.3);
+  box-shadow: 0 20px 40px -5px rgba(0, 0, 0, 0.3);
   border-color: var(--border-accent);
 }
 
 .project-visual {
   width: 100%;
-  height: 250px; /* Fixed height for consistency */
+  height: 250px;
   overflow: hidden;
   position: relative;
   border-bottom: 1px solid var(--border-subtle);
@@ -222,8 +221,8 @@
 .project-visual img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Crop to fill width */
-  object-position: top center; /* Focus on the top of the interface */
+  object-fit: cover;
+  object-position: top center;
   transition: transform 700ms var(--ease-out);
 }
 
@@ -232,7 +231,7 @@
 }
 
 .project-info {
-  padding: 1.5rem; /* More padding for card content */
+  padding: 1.5rem;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
@@ -247,7 +246,7 @@
 }
 
 .project-title {
-  font-size: var(--text-xl); /* Slightly smaller for grid card */
+  font-size: var(--text-xl);
   margin-bottom: 0.75rem;
   line-height: 1.3;
 }
